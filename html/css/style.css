@@ -425,7 +425,7 @@ h6 { font-size: 16px; }
 	background-repeat: no-repeat;
 	background-position:center;
 	background-size: cover;
-	animation: morph 2s ease-in-out infinite 1s;
+	animation: morph 2s ease-in-out infinite 0s;
 	background-blend-mode: multiply;
 	-webkit-box-shadow: inset 0px 0px 0px 9px rgba(255,255,255,.3);
     -moz-box-shadow: inset 0px 0px 0px 9px rgba(255,255,255,.3);
@@ -442,6 +442,34 @@ h6 { font-size: 16px; }
 	 100% {
 		 border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 	}
+}
+
+#hidden {
+    z-index:9999;
+    display:none;
+	-webkit-transition:1s;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: cover;
+    position:fixed;
+    height:100%;
+    width:100%;
+    left: 0px;
+    top: 0px;    
+    text-align: center;
+	
+}
+.close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
 }
 
 .tokyo_tm_home .details{
